@@ -1,0 +1,3657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+
+
+  
+<style>
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header .logo img {
+    max-width: 150px;
+    display: block;
+    margin-bottom: 10px;
+}
+.header .description h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.header .description p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.search-box {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.back-button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #46379e;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+.back-button:hover {
+    background-color: #46379e;
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #46379e;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+</style>
+</head>
+
+
+<body>
+<!--Header-->
+<div>
+<a href="purok.html" class="back-button">Back</a>
+</div>
+<div class="container">
+  <div class="header">
+      <div class="logo">
+          <img src="pictures/logo.png" alt="Logo">
+      </div>
+      <div class="description">
+          <h1>Pansol, Lopez, Quezon</h1>
+          <p>Purok Beach A</p>
+      </div>
+  </div>
+  <div class="search-container">
+      <input type="text" id="searchInput" class="search-box" onkeyup="searchTable()" placeholder="Search for names..">
+  </div>
+</div>
+
+<!--Table-->
+<table class="styled-table" id="myTable">
+  <thead>
+    <tr>
+      <th></th>
+      <th>NAME</th>
+      <th>GENDER</th>
+      <th>BIRTHDAY</th>
+      <th>AGE</th>
+      <th>STATUS</th>
+      <th>EDUCATIONAL ATTAINMENT</th>
+      <th>OCCUPATION</th>
+      <th>4PS</th>
+      <th>SENIOR</th>
+      <th>PWD</th>
+      <th>RELIGION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>BARRENO, RODEL V.</td>
+      <td>Male</td>
+      <td>06/03/1973</td>
+      <td>49</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>FARMER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO,LINA P</td>
+      <td>Female</td>
+      <td>06/06/1975</td>
+      <td>47</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>HOUSEKEEPER</td>
+      <td>YES</td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ORRELLENIDA, MYRON S.</td>
+      <td>Male</td>
+      <td>05/01/93</td>
+      <td>29</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>GASOLINE BOY</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ORRELLENIDA, CLEALYN B.</td>
+      <td>Female</td>
+      <td>02/20/99</td>
+      <td>23</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>HOUSEKEEPER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ORRELLENIDA, MYRACLE FATE B.</td>
+      <td>Female</td>
+      <td>01/13/19</td>
+      <td>3</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, ALBERT VINCENT</td>
+      <td>Male</td>
+      <td>09/27/2004</td>
+      <td>17</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, IVAN RONNEL</td>
+      <td>Male</td>
+      <td>05/07/07</td>
+      <td>15</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, DIANNE RHOLYN</td>
+      <td>Female</td>
+      <td>06/29/11</td>
+      <td>11</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, LORAINNE</td>
+      <td>Female</td>
+      <td>08-18-18</td>
+      <td>3</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>REYES, FUMAR Male.</td>
+      <td>Male</td>
+      <td>07/29/1993</td>
+      <td>28</td>
+      <td>LIVE IN</td>
+      <td>HS GRAD</td>
+      <td>PINTOR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, MAR JOY P.</td>
+      <td>Female</td>
+      <td>09/07/1997</td>
+      <td>25</td>
+      <td>LIVE IN</td>
+      <td>HS GRAD</td>
+      <td>HOUSEKEEPER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>REYES, EUNNA GRIEL B.</td>
+      <td>Female</td>
+      <td>09-04-2018</td>
+      <td>3</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARENAL, ARMAN B.</td>
+      <td>Male</td>
+      <td>8-24-1990</td>
+      <td>31</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>TRICYCLE DRIVER</td>
+      <td>NO</td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARENAL, ELLAINE G.</td>
+      <td>Female</td>
+      <td>12/18/1992</td>
+      <td>29</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>TEACHER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARENAL, AUSTERELY G</td>
+      <td>Female</td>
+      <td>05-08-2012</td>
+      <td>10</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>KATOLIKO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARENAL, ANDREI G.</td>
+      <td>Male</td>
+      <td>03-28-2015</td>
+      <td>7</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALACA, GENELYN N</td>
+      <td>Male</td>
+      <td>07-15-1974</td>
+      <td>43</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>VENDOR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MENDOZA,RENELYN V</td>
+      <td>Female</td>
+      <td>2-23-1978</td>
+      <td>44</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LITA, JOED M.</td>
+      <td>Female</td>
+      <td>11-28-95</td>
+      <td>28</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>BAKER</td>
+      <td></td>
+      <td></td>
+      <td>YES</td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BOZUN, GERALD</td>
+      <td>Male</td>
+      <td>10/17/1990</td>
+      <td>32</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td>ARMY</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MILLARES, REGINE RENBAD</td>
+      <td>Female</td>
+      <td>05/01/1996</td>
+      <td>26</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BUENZA, ALFEO BUENAOBRA</td>
+      <td>Male</td>
+      <td>04-01-90</td>
+      <td>32</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td>ARMY</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BALASA,MARIELLE DELAPAZ</td>
+      <td>Female</td>
+      <td>08/28/1997</td>
+      <td>25</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MONTES, EDWIN D</td>
+      <td>Male</td>
+      <td>2-1-1975</td>
+      <td>47</td>
+      <td>MARRIED</td>
+      <td></td>
+      <td>FARMER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MONTES, LORNA E</td>
+      <td>Female</td>
+      <td>11-22-1979</td>
+      <td>41</td>
+      <td>MARRIED</td>
+      <td></td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MONTES, EDRIEAN E.</td>
+      <td>Male</td>
+      <td>03-29-2017</td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MONTES, ARIANNE FAYE E.</td>
+      <td>Female</td>
+      <td>02/16/2019</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CALVARIO,HELEN M.</td>
+      <td>Female</td>
+      <td>08-07-1962</td>
+      <td>59</td>
+      <td>WIDOW</td>
+      <td>HS GRAD</td>
+      <td>HOUSEKEEPER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>BORN AGAIN</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CALVARIO, RAINIER M.</td>
+      <td>Male</td>
+      <td>09/14/1984</td>
+      <td>37</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>ENGINEER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>BORN AGAIN</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CALVARIO, AIZEL MARIE</td>
+      <td>Female</td>
+      <td>09-09-1986</td>
+      <td>35</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td>NURSE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>BORN AGAIN</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CALVARIO, GEILLEN MARIE M.</td>
+      <td>Female</td>
+      <td>8-24-1995</td>
+      <td>26</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td>PHARMACIST</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>BORN AGAIN</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DELVALLE, ROELAIDA Q.</td>
+      <td>Female</td>
+      <td>12-16-66</td>
+      <td>55</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>YES</td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GATARIN, FEBIE</td>
+      <td>Female</td>
+      <td>08-30-1967</td>
+      <td>54</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE GUZMAN, NESTOR A.</td>
+      <td>Male</td>
+      <td>07/27/1955</td>
+      <td>66</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>CARPENTER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>LATTER DAY SAINTS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GUAY, LORNA M.</td>
+      <td>Female</td>
+      <td>03/10/1968</td>
+      <td>54</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>YES</td>
+      <td>LATTER DAY SAINTS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALACA, MARK JOSEPH</td>
+      <td>Male</td>
+      <td>05-01-1994</td>
+      <td>28</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td>BPO</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>LATTER DAY SAINTS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BLANCO,JACKYLOU M.</td>
+      <td>Female</td>
+      <td>09-18-1995</td>
+      <td>26</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>LATTER DAY SAINTS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BLANCO, MARK ANTHONY M.</td>
+      <td>Male</td>
+      <td>08-20-1996</td>
+      <td>25</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td>CONSTRUCTION</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>LATTER DAY SAINTS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GUAY,JELLY ANN M.</td>
+      <td>Female</td>
+      <td>09-30-2000</td>
+      <td>21</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>LATTER DAY SAINTS</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TABIEN, JORGE ARANDELA</td>
+      <td>Male</td>
+      <td>03/19/1980</td>
+      <td>42</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>FARMER</td>
+      <td>YES</td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TABIEN, ROSALIE COLLADO</td>
+      <td>Female</td>
+      <td>02/06/1982</td>
+      <td>40</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>HOUSEKEEPER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TABIEN, JADE ASHLIE C.</td>
+      <td>Female</td>
+      <td>08/04/2005</td>
+      <td>16</td>
+      <td>SINGLE</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TABIEN, JADE ANGELIE</td>
+      <td>Female</td>
+      <td>03/06/2007</td>
+      <td>15</td>
+      <td>SINGLE</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TABIEN, ANGELICA JADE C.</td>
+      <td>Female</td>
+      <td>03/06/2007</td>
+      <td>15</td>
+      <td>SINGLE</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TABIEN, JADE AUBREY C.</td>
+      <td>Female</td>
+      <td>11-01-2011</td>
+      <td>10</td>
+      <td>SINGLE</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COLLADO, RICHARDO Male.</td>
+      <td>Male</td>
+      <td>3-20-88</td>
+      <td>34</td>
+      <td>SINGLE</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CANTILLANA, RUBEN ARGOSO</td>
+      <td>Male</td>
+      <td>10-21-50</td>
+      <td>71</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>SEAMAN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CANTILLANA,CAROLINA VILLATE</td>
+      <td>Female</td>
+      <td>9-22-53</td>
+      <td>68</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>BUSINESSWOMAN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DAGOS, BERTITO NORADA</td>
+      <td>Male</td>
+      <td>10/21/1943</td>
+      <td>78</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>GASOLINE EMP.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DAGOS, CLEOTILDE C.</td>
+      <td>Female</td>
+      <td>04-04-43</td>
+      <td>79</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>PENSIONER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DAGOS, ARTHUR C.</td>
+      <td>Male</td>
+      <td>09/25/1976</td>
+      <td>43</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>YES</td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DAGOS, DARLENE C.</td>
+      <td>Female</td>
+      <td>10-05-85</td>
+      <td>36</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WENJAM, MICHAELM.</td>
+      <td>Male</td>
+      <td>04-21-68</td>
+      <td>54</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>POLICEMAN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WENJAM, JANICE M.</td>
+      <td>Female</td>
+      <td>5-23-87</td>
+      <td>34</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MANAS, MARIA NICOLE</td>
+      <td>Female</td>
+      <td>11-19-07</td>
+      <td>14</td>
+      <td>SINGLE</td>
+      <td>G8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MANAS FRANCIS RALPH</td>
+      <td>Male</td>
+      <td>09-25-09</td>
+      <td>12</td>
+      <td>SINGLE</td>
+      <td>G6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MANAS, JAMAICA M.</td>
+      <td>Female</td>
+      <td>09-16-2011</td>
+      <td>10</td>
+      <td>SINGLE</td>
+      <td>G4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MARONILLA, MARLO M.</td>
+      <td>Male</td>
+      <td>09/14/1987</td>
+      <td>34</td>
+      <td>MARRIED</td>
+      <td>UNDERGRAD</td>
+      <td>BARANGAY OFFICIAL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MARONILLA, REALYN J.</td>
+      <td>Female</td>
+      <td>06-11-1991</td>
+      <td>30</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>TEACHER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MARONILLA, MHAREAN CHLOE</td>
+      <td>Female</td>
+      <td>03-13-2015</td>
+      <td>7</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MARONILLA, SAMIEL MARCO</td>
+      <td>Male</td>
+      <td>09-26-17</td>
+      <td>4</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SAAVEDRA, SUNDAY</td>
+      <td>Male</td>
+      <td>3-26-72</td>
+      <td>50</td>
+      <td></td>
+      <td>HS GRAD</td>
+      <td>BOX</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MENDOZA, SAMANTHA</td>
+      <td>Female</td>
+      <td>11-27-1993</td>
+      <td>29</td>
+      <td></td>
+      <td>2NDYR</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SAAVEDRA, JILLIANA ROJAVE</td>
+      <td>Female</td>
+      <td>3-28-15</td>
+      <td>7</td>
+      <td></td>
+      <td>G1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE LEON, CARLITO V</td>
+      <td>Male</td>
+      <td>12/21/1940</td>
+      <td>81</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>BUSINESSMAN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE LEON, ELENA J.</td>
+      <td>Female</td>
+      <td>04-07-50</td>
+      <td>71</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>BUSINESSWOMAN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MACALINTA, IRA J.</td>
+      <td>Male</td>
+      <td>6-18-77</td>
+      <td>45</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, MARIANITO</td>
+      <td>Male</td>
+      <td>12/13/1963</td>
+      <td>58</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>CARPENTER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, REBECCA M.</td>
+      <td>Female</td>
+      <td>11-08-67</td>
+      <td>55</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>HOUSEKEEPER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO,JULIUS M.</td>
+      <td>Male</td>
+      <td>07-19-87</td>
+      <td>34</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, DAY</td>
+      <td>Female</td>
+      <td>08/13/1988</td>
+      <td>33</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, DARLENE M.</td>
+      <td>Female</td>
+      <td>03/03/1994</td>
+      <td>27</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, MARK JAYPEE M.</td>
+      <td>Male</td>
+      <td>04/02/1996</td>
+      <td>26</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO,RECCA JOY M.</td>
+      <td>Female</td>
+      <td>11/06/2011</td>
+      <td>10</td>
+      <td>SINGLE</td>
+      <td>ELEM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARENAL, ARISTIDES V.</td>
+      <td>Male</td>
+      <td>07/08/1956</td>
+      <td>66</td>
+      <td>MARRIED</td>
+      <td></td>
+      <td>CARPENTER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARENAL, MARIA B.</td>
+      <td>Female</td>
+      <td>02-02-56</td>
+      <td>66</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>BRGY. SEC</td>
+      <td>YES</td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARENAL, ARMAN B.</td>
+      <td>Male</td>
+      <td>8-24-90</td>
+      <td>31</td>
+      <td>MARRIED</td>
+      <td></td>
+      <td>TRICYCLE DRIVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARENAL, ELLAINE G.</td>
+      <td>Female</td>
+      <td>12/18/1992</td>
+      <td>29</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>TEACHER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARENAL, AUSTERELY G</td>
+      <td>Female</td>
+      <td>05-03-12</td>
+      <td>9</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARENAL, ANDREI G.</td>
+      <td>Male</td>
+      <td>03/28/2015</td>
+      <td>7</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BARRENO, JOSEPH G.</td>
+      <td>Male</td>
+      <td>07/03/1968</td>
+      <td>54</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>TRICYCLE DRIVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AUTOR,ERNIE B.</td>
+      <td>Male</td>
+      <td>03-06-67</td>
+      <td>55</td>
+      <td>MARRIED</td>
+      <td>2NDYR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>YES</td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AUTOR,JENETTE B.</td>
+      <td>Female</td>
+      <td>2-28-66</td>
+      <td>56</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>HOUSEKEEPER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LUMBERA, JAMIE RUTH</td>
+      <td>Female</td>
+      <td>10-23-86</td>
+      <td>35</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AUTOR, JACQUILINE B.</td>
+      <td>Female</td>
+      <td>11-18-1993</td>
+      <td>28</td>
+      <td>SINGLE</td>
+      <td>2NDYR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AUTOR,JENIELYNE B.</td>
+      <td>Female</td>
+      <td>11-28-05</td>
+      <td>16</td>
+      <td>SINGLE</td>
+      <td>G10</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RAGO, DINDO N.</td>
+      <td>Male</td>
+      <td>01/19/1981</td>
+      <td>41</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>SEAFARERS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RAGO,NERISSA M.</td>
+      <td>Female</td>
+      <td>06/02/1984</td>
+      <td>37</td>
+      <td>MARRIED</td>
+      <td>VOC COURSE GRAD</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RAGO,KYLLE ANTOINETTE M.</td>
+      <td>Female</td>
+      <td>5-4-05</td>
+      <td>17</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RAGO,KAYE PRINCESS M.</td>
+      <td>Female</td>
+      <td>11-22-06</td>
+      <td>15</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RAGO, KARL DINNIEL M.</td>
+      <td>Male</td>
+      <td>12/14/2011</td>
+      <td>10</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RAGO, KRISTOFF DINNIEL</td>
+      <td>Male</td>
+      <td>01/07/2013</td>
+      <td>9</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RAGO, MARIA CORAZON</td>
+      <td>Female</td>
+      <td>04-12-49</td>
+      <td>73</td>
+      <td>WIDOW</td>
+      <td>VOC COURSE GRAD</td>
+      <td>BRGY, OFFICIAL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CAPISONDA, TITO T.</td>
+      <td>Male</td>
+      <td>05-23-67</td>
+      <td>54</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>FISHERMAN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CAPISONDA, AMIEL C.</td>
+      <td>Male</td>
+      <td>03-26-06</td>
+      <td>15</td>
+      <td>SINGLE</td>
+      <td>G10</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OBERA, ENRIQUE A</td>
+      <td>Male</td>
+      <td>07-15-64</td>
+      <td>58</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>FARMER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OBERA, MARITA M.</td>
+      <td>Female</td>
+      <td>02-23-61</td>
+      <td>61</td>
+      <td>MARRIED</td>
+      <td>ELEM</td>
+      <td>TEACHER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OBERA, ENRICO JEM M.</td>
+      <td>Male</td>
+      <td>04-20-94</td>
+      <td>28</td>
+      <td>SINGLE</td>
+      <td>SCHOOLING</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OBERA, ALDRICH JENZEN O.</td>
+      <td>Male</td>
+      <td>1-30-14</td>
+      <td>7</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OBERA, KAEDEN DRAZE O.</td>
+      <td>Male</td>
+      <td>12/27/2017</td>
+      <td>4</td>
+      <td>SINGLE</td>
+      <td>ELEM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OBERA, MARY ANN</td>
+      <td>Female</td>
+      <td>05-02-86</td>
+      <td></td>
+      <td>SINGLE</td>
+      <td>BSAM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OBERA, MARY GRACE</td>
+      <td>Female</td>
+      <td>03/26/1988</td>
+      <td>34</td>
+      <td>SINGLE</td>
+      <td>PROD OPERATOR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OBERA, MARIA JOYBIE</td>
+      <td>Female</td>
+      <td>01-10-1992</td>
+      <td>30</td>
+      <td>SINGLE</td>
+      <td>WAREHOUSE PERSONNEL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OBERA, ERICA JANE</td>
+      <td>Female</td>
+      <td>04-18-00</td>
+      <td>22</td>
+      <td>SINGLE</td>
+      <td>SCHOOLING</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OGAYON, JEAN BY</td>
+      <td>Female</td>
+      <td>06/18/1994</td>
+      <td>28</td>
+      <td>SINGLE</td>
+      <td>DOMT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CANTILLO, ZAKIA MEILI</td>
+      <td>Female</td>
+      <td>04/06/2017</td>
+      <td>5</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ELLA, RONNILO P.</td>
+      <td>Male</td>
+      <td>9-5-55</td>
+      <td>66</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ELLA, VICTORIA</td>
+      <td>Female</td>
+      <td>12-24-59</td>
+      <td>62</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ELLA ,JOHN CARLOS</td>
+      <td>Male</td>
+      <td>6-13-90</td>
+      <td>31</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ELLA, JOYNALYN</td>
+      <td>Female</td>
+      <td>10-13-92</td>
+      <td>29</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DUCOT, AEONA YOHAN</td>
+      <td>Male</td>
+      <td>09/18/2010</td>
+      <td>11</td>
+      <td>SINGLE</td>
+      <td>ELEM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ELLA, JANINA</td>
+      <td>Female</td>
+      <td>12-06-17</td>
+      <td>4</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ELLA, ELMYRA</td>
+      <td>Female</td>
+      <td>3-19-93</td>
+      <td>30</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ELLA ,BEXIEE YEOSEFF</td>
+      <td>Female</td>
+      <td>12-29-93</td>
+      <td>28</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DINGLASAN, GLECERIA</td>
+      <td>Female</td>
+      <td>12/21/1938</td>
+      <td>83</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DELA PENA, ABEL D.</td>
+      <td>Male</td>
+      <td>02-07-75</td>
+      <td>47</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DELA PENA, CELINE C.</td>
+      <td>Female</td>
+      <td>02/20/1987</td>
+      <td>36</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DELA PENA, PRINZ XYMDO C.</td>
+      <td>Male</td>
+      <td>11-1-07</td>
+      <td>14</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DELA PENA, EZEKIEL C.</td>
+      <td>Male</td>
+      <td>11/20/2008</td>
+      <td>13</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DELA PENA, PRECIOUS JEWEL C.</td>
+      <td>Female</td>
+      <td>10-11-10</td>
+      <td>11</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DELA PENA, TROY</td>
+      <td>Male</td>
+      <td>12-22-12</td>
+      <td>9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DELA PENA, VINCE JOVANN</td>
+      <td>Male,</td>
+      <td>10-23-20</td>
+      <td>8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VARGAS JR, GERONIMO B.</td>
+      <td>Male</td>
+      <td>01-19-55</td>
+      <td>67</td>
+      <td>MARRIED</td>
+      <td>G7</td>
+      <td>BRGY CAPT.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VARGAS, LAURA A.</td>
+      <td>Female</td>
+      <td>09-26-52</td>
+      <td>70</td>
+      <td>SINGLE</td>
+      <td>1ST YR</td>
+      <td>BRGY. COUNCIL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FERRERAS, REYNALDO D.</td>
+      <td>Male</td>
+      <td>07-16-74</td>
+      <td>48</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td>AUTO MECANIC</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FERRERAS, JOY V.</td>
+      <td>Female</td>
+      <td>04-24-77</td>
+      <td>45</td>
+      <td>SINGLE</td>
+      <td>1ST YR</td>
+      <td>COORDINATOR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FERRERAS, DANIEL V.</td>
+      <td>Female</td>
+      <td>08-14-99</td>
+      <td>22</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FERRERAS, CARESTELLE V.</td>
+      <td>Female</td>
+      <td>11/03/2000</td>
+      <td>21</td>
+      <td>SINGLE</td>
+      <td>G10</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FERRERAS, LIZBETH V.</td>
+      <td>Female</td>
+      <td>02-20-05</td>
+      <td>17</td>
+      <td>SINGLE</td>
+      <td>G10</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ANDAL, ALDRICH JEANN</td>
+      <td>Female</td>
+      <td>12-14-00</td>
+      <td>21</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DEGUZMAN, DENNIS G.</td>
+      <td>Male</td>
+      <td>06/09/1992</td>
+      <td>30</td>
+      <td>SINGLE</td>
+      <td>VOC.</td>
+      <td>DRIVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SDA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FALLER, MYRA O.</td>
+      <td>Female</td>
+      <td>04/06/1992</td>
+      <td>25</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td>VENDOR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SDA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DEGUZMAN,ZAKETRY</td>
+      <td>Male</td>
+      <td>06/07/2014</td>
+      <td>7</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SDA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DEGUZMAN, JENETTE Male.</td>
+      <td>Female</td>
+      <td>03-20-76</td>
+      <td>46</td>
+      <td>MARRIED</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DEGUZMAN, STEVEN DOLE</td>
+      <td>Male</td>
+      <td>07-26-01</td>
+      <td>20</td>
+      <td>SINGLE</td>
+      <td>ELEM</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DEGUZMAN, REIN</td>
+      <td>Male</td>
+      <td>12-13-05</td>
+      <td>16</td>
+      <td>SINGLE</td>
+      <td>G9</td>
+      <td>STUDENTS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE, HONORATA I.</td>
+      <td>Female</td>
+      <td>01/11/1939</td>
+      <td>83</td>
+      <td>WIDOW</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE, TITO I.</td>
+      <td>Male</td>
+      <td>04/01/1966</td>
+      <td>56</td>
+      <td>MARRIED</td>
+      <td>3RD YR COLLEGE</td>
+      <td>WELDER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE ,HILDA C.</td>
+      <td>Female</td>
+      <td>03/10/1971</td>
+      <td>50</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE, MA.CORAZON</td>
+      <td>Female</td>
+      <td>06/12/1993</td>
+      <td>28</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td>CALL CENTER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE,KAREL MA.MARGARITA</td>
+      <td>Female</td>
+      <td>01/11/1939</td>
+      <td>83</td>
+      <td>WIDOW</td>
+      <td>ELEM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE, MALVIN</td>
+      <td>Female</td>
+      <td>08/04/1967</td>
+      <td>55</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td>SELF EMPLOYED</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE, ANITA D.</td>
+      <td>Female</td>
+      <td>06/07/1969</td>
+      <td>53</td>
+      <td>SINGLE</td>
+      <td>COLLE GRAD</td>
+      <td>SELF EMPLOYED</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE,MARC MANUEL</td>
+      <td>Male</td>
+      <td>09-18-91</td>
+      <td>30</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td>SELF EMPLOYED</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE, MAISE</td>
+      <td>Female</td>
+      <td>12-15-92</td>
+      <td>29</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td>OFW</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE, MELVIN</td>
+      <td>Male</td>
+      <td>06/05/1995</td>
+      <td>26</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td>OFW</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MILITANTE, RAUL J.</td>
+      <td>Male</td>
+      <td>07/30/1961</td>
+      <td>61</td>
+      <td>MARRIED</td>
+      <td>1ST YR CRIM.</td>
+      <td></td>
+      <td>YES</td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MILITANTE, VIRGINIA A.</td>
+      <td>Female</td>
+      <td>08/17/1962</td>
+      <td>60</td>
+      <td>MARRIED</td>
+      <td>NURSING AUXILLARY</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MILITANTE, RJAY A.</td>
+      <td>Male</td>
+      <td>7/28/1986</td>
+      <td>36</td>
+      <td>SINGLE</td>
+      <td>VOCALTUNIAL APT UNDERGRAD</td>
+      <td>CARE GIVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MILITANTE, RAVEL JOANA A.</td>
+      <td>Female</td>
+      <td>1/21/1989</td>
+      <td>33</td>
+      <td>SINGLE</td>
+      <td>JUNIOR SECRITERIAL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MILITANTE, RAUL BASILIO A.</td>
+      <td>Male</td>
+      <td>05/08/1990</td>
+      <td>32</td>
+      <td>SINGLE</td>
+      <td>BSMT</td>
+      <td>SEA...</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MILITANTE, JEREMAY A.</td>
+      <td>Female</td>
+      <td>5-17-1994</td>
+      <td>28</td>
+      <td>SINGLE</td>
+      <td>BSED</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MILITANTE, REGIN A.</td>
+      <td>Male</td>
+      <td>9-16-1997</td>
+      <td>25</td>
+      <td>SINGLE</td>
+      <td>BEED</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MILITANTE, RYAN JAVE A.</td>
+      <td>Male</td>
+      <td>6-27-2000</td>
+      <td>20</td>
+      <td>SINGLE</td>
+      <td>3RD YR COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IMPERIAL, OFELIA G.</td>
+      <td>Female</td>
+      <td>4-22-1943</td>
+      <td>80</td>
+      <td>WIDOW</td>
+      <td>ELEM GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VILLAMOR,IMER I.</td>
+      <td>Female</td>
+      <td>01-23-1977</td>
+      <td>43</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE GUZAMAN, FEDERICO A.</td>
+      <td>Male</td>
+      <td>06-24-1973</td>
+      <td>49</td>
+      <td>LIVE IN</td>
+      <td>ELEM GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VILLATE, ANAWENDA O.</td>
+      <td>Female</td>
+      <td>02-15-1962</td>
+      <td>60</td>
+      <td>LIVE IN</td>
+      <td>ELEM GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE GUZAMAN, KIMBERLY O.</td>
+      <td>Female</td>
+      <td>06-24-2002</td>
+      <td>19</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CASTRO, ALGEN Male.</td>
+      <td>Male</td>
+      <td>11-25-1990</td>
+      <td>32</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>CREW</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CASTRO, ABEGAIL V.</td>
+      <td>Female</td>
+      <td>11-11-1991</td>
+      <td>31</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>OFW</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GLENDRO, ANNAZANDREA O.</td>
+      <td>Female</td>
+      <td>04-02-1949</td>
+      <td>23</td>
+      <td>SINGLE</td>
+      <td>H,SGRAD</td>
+      <td>SALESLADY</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VILLANTE, GAEYLLE ALEXANDRA</td>
+      <td>Female</td>
+      <td>07-17-2019</td>
+      <td>3</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE GUZMAN, CRESENCIA</td>
+      <td>Female</td>
+      <td>05-05-34</td>
+      <td>88</td>
+      <td>WIDOW</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE GUZMAN PRIMA A.</td>
+      <td>Male</td>
+      <td>02-09-62</td>
+      <td>60</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td>YES</td>
+      <td></td>
+      <td>YES</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE GUZMAN , RAFAEL A.</td>
+      <td>Male</td>
+      <td>10-24-62</td>
+      <td>43</td>
+      <td>SEPARATED</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE GUZMAN, CHERRYLYN MARIE</td>
+      <td>Female</td>
+      <td>10-22-92</td>
+      <td>30</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AUSTRIA, CHRIS VERNEL</td>
+      <td>Male</td>
+      <td>12-11-09</td>
+      <td>13</td>
+      <td>SINGLE</td>
+      <td>ELEM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE GUZMAN, COMERON</td>
+      <td>Male</td>
+      <td>12-7-11</td>
+      <td>11</td>
+      <td>SINGLE</td>
+      <td>ELEM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NULLAN, CARLO</td>
+      <td>Male</td>
+      <td>4-7-17</td>
+      <td>5</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MASAGANDA,REDENTOR Q.</td>
+      <td>Male</td>
+      <td>9-27-67</td>
+      <td>54</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>BUS INSPECTOR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MASAGANDA, MARIVIC</td>
+      <td>Female</td>
+      <td>7-19-70</td>
+      <td>51</td>
+      <td>MARRIED</td>
+      <td>VOCAL COURSE</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MASAGANDA, GLYDELLE I.</td>
+      <td>Female</td>
+      <td>06-04-95</td>
+      <td>27</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td>TELLER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MASAGANDA, REMMIEL I.</td>
+      <td>Male</td>
+      <td>10-21-98</td>
+      <td>23</td>
+      <td>SINGLE</td>
+      <td>COLLEGE</td>
+      <td>ADMIN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VALENCIA, AYESHA ZIERA</td>
+      <td>Female</td>
+      <td></td>
+      <td>7</td>
+      <td>SINGLE</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ESMIERO,ROSALITO B.</td>
+      <td>Male</td>
+      <td>12-10-1968</td>
+      <td>53</td>
+      <td>MARRIED</td>
+      <td>ELEMENTARY</td>
+      <td>RA EXTRA EXTRA</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IMPERIAL, MARIA VIRGINIA G.</td>
+      <td>Female</td>
+      <td>08-31-1965</td>
+      <td>56</td>
+      <td>MARRIED</td>
+      <td>2ND YR COLLEGE</td>
+      <td>DAYCARE WORKER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ESMERD, EMERALD I.</td>
+      <td>Female</td>
+      <td>10-5-2006</td>
+      <td>15</td>
+      <td>SINGLE</td>
+      <td>G8</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ALBA,RUBEN B.</td>
+      <td>Male</td>
+      <td>1-29-59</td>
+      <td>63</td>
+      <td>MARRIED</td>
+      <td>HSGRAD</td>
+      <td>WELDER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ALBA, MARLYN</td>
+      <td>Female</td>
+      <td>05-12-59</td>
+      <td>63</td>
+      <td>MARRIED</td>
+      <td>VOCAL COURSE</td>
+      <td>MANICURIEST</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LUCILA, MARKGIL</td>
+      <td>Male</td>
+      <td>11-03-82</td>
+      <td>39</td>
+      <td>MARRIED</td>
+      <td>VOCAL COURSE</td>
+      <td>DRIVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LUCILA, MARIBEL</td>
+      <td>Female</td>
+      <td>6-30-84</td>
+      <td>38</td>
+      <td></td>
+      <td>VOCAL COURSE</td>
+      <td>OFW</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LUCILA, MARK WINSTON</td>
+      <td>Male</td>
+      <td>01-08-05</td>
+      <td>17</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LUCILA,ALDRICH</td>
+      <td>Male</td>
+      <td>06-29-07</td>
+      <td>15</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LUCILA, HARRIS MIGUEL</td>
+      <td>Male</td>
+      <td>03-31-17</td>
+      <td>5</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MARANA, EMIL JOHN V.</td>
+      <td>Male</td>
+      <td>07-25-82</td>
+      <td>39</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>DRIVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MARANA, JOELTE S.</td>
+      <td>Female</td>
+      <td>07-16-80</td>
+      <td>41</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MARANA, UL RICH JETHRO S.</td>
+      <td>Male</td>
+      <td>12-26-04</td>
+      <td>17</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MARANA, URIAH JEDNIA S.</td>
+      <td>Female</td>
+      <td>11-26-05</td>
+      <td>16</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MARANA, UELLHER JILL S.</td>
+      <td>Female</td>
+      <td>09-07-08</td>
+      <td>13</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CABRERA, JEONARD ABOL</td>
+      <td>Male</td>
+      <td>04-05-81</td>
+      <td>41</td>
+      <td>MARRIED</td>
+      <td>ELEM GRAD</td>
+      <td>LABORER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CABREDA, MELANIE S.</td>
+      <td>Female</td>
+      <td>05-20-83</td>
+      <td>38</td>
+      <td>MARRIED</td>
+      <td>COLLEGE</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CABREDA, JONA MHAY S.</td>
+      <td>Female</td>
+      <td>09-02-10</td>
+      <td>11</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CABRERA, JONAS S.</td>
+      <td>Male</td>
+      <td>03-01-13</td>
+      <td>9</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ABATZULA, MONOLITO N.</td>
+      <td>,Male</td>
+      <td>01-16-78</td>
+      <td>44</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td>DRIVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, MELODY M.</td>
+      <td>Female</td>
+      <td>08-26-80</td>
+      <td>41</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td>OFW</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CAPELLAN,MAC JOHN A.</td>
+      <td>Male</td>
+      <td>02-13-00</td>
+      <td>22</td>
+      <td>SINGLE</td>
+      <td>SCHOOLING</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CAPELLAN, JOANNA MAE</td>
+      <td>Female</td>
+      <td>09-23-02</td>
+      <td>18</td>
+      <td>SINGLE</td>
+      <td>SCHOOLING</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CAPELLAN, MARK JUSTINE</td>
+      <td>Male</td>
+      <td>08-03-04</td>
+      <td>16</td>
+      <td>SINGLE</td>
+      <td>SCHOOLING</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CAPELLAN, MA.ANGELICA KRISTINE</td>
+      <td>Female</td>
+      <td>03-17-09</td>
+      <td>13</td>
+      <td>SINGLE</td>
+      <td>SCHOOLING</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CAPELLAN, MAC ANDREW</td>
+      <td>Male</td>
+      <td>05-01-10</td>
+      <td>12</td>
+      <td>SINGLE</td>
+      <td>SCHOOLING</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, JOVENCIO A.</td>
+      <td>Male</td>
+      <td>02-13-47</td>
+      <td>75</td>
+      <td>WIDOW</td>
+      <td>HS GRAD</td>
+      <td>DRIVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, JAYSON Male.</td>
+      <td>Male</td>
+      <td>12-07-74</td>
+      <td>48</td>
+      <td>SINGLE</td>
+      <td>ARCHER GRAD</td>
+      <td>CONSTRUCTION</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, REODAY Male.</td>
+      <td>Male</td>
+      <td>11-06-87</td>
+      <td>35</td>
+      <td>MARRIED</td>
+      <td>VOCATIONAL</td>
+      <td>KAGAWAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, JINNEFER R.</td>
+      <td>Female</td>
+      <td>06-13-86</td>
+      <td>36</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td>FOOD VIDOR</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, REOJHAY R.</td>
+      <td>Male</td>
+      <td>06-11-20</td>
+      <td>14</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td>DRIVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, JOSEPH Female.</td>
+      <td>Male</td>
+      <td>04-08-68</td>
+      <td>54</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, CRISTINA L.</td>
+      <td>Female</td>
+      <td>09-28-68</td>
+      <td>53</td>
+      <td>MARRIED</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, ADRIAN</td>
+      <td>Male</td>
+      <td>04-06-90</td>
+      <td>31</td>
+      <td>SINGLE</td>
+      <td>ELEMENTARY</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, PRECIOUS LARA</td>
+      <td>Female</td>
+      <td>10-04-05</td>
+      <td>16</td>
+      <td>SINGLE</td>
+      <td>ELEMENTARY</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, MA.JHANA</td>
+      <td>Female</td>
+      <td>04-03-13</td>
+      <td>9</td>
+      <td>SINGLE</td>
+      <td>ENCODER</td>
+      <td>ENCODER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MAPANAO, ARISTEO</td>
+      <td>Female</td>
+      <td>01-07-83</td>
+      <td>39</td>
+      <td>SINGLE</td>
+      <td>HS GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ARGENTE, ALMIRA MAE</td>
+      <td>Female</td>
+      <td>12-07-95</td>
+      <td>26</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MAPANO, ATHENA YSABELLE</td>
+      <td>Female</td>
+      <td>11-09-17</td>
+      <td>4</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE, NARCISO I.</td>
+      <td>Male</td>
+      <td>04-29-64</td>
+      <td>58</td>
+      <td>MARRIED</td>
+      <td>COLLEGE GRAD</td>
+      <td>EMPLOYEE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE, MARIA MERCEDES</td>
+      <td>Female</td>
+      <td>09-24-67</td>
+      <td>55</td>
+      <td>MARRIED</td>
+      <td>2NDYR COLLEGE</td>
+      <td>GOV. EMPLYOEE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE GUZMAN ESMERALDA</td>
+      <td>Female</td>
+      <td>08-08-87</td>
+      <td>35</td>
+      <td>MARRIED</td>
+      <td>COLLEGE GRAD</td>
+      <td>BUSINESSWOMAN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALITE, REA ROSARIO</td>
+      <td>Female</td>
+      <td>10-24-90</td>
+      <td>32</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td>GOV. EMPLYOEE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MALIE, CELELIA MARSHA G.</td>
+      <td>Female</td>
+      <td>09-21-94</td>
+      <td>28</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td>GOV. EMPLYOEE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DE GUZMAN, FREDDERICKA EMERAUDE B.</td>
+      <td>Female</td>
+      <td>03-01-11</td>
+      <td>11</td>
+      <td>SINGLE</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COMIA, RONALD SALAMAT</td>
+      <td>Male</td>
+      <td>05-22-78</td>
+      <td>44</td>
+      <td>MARRIED</td>
+      <td>COLLEGE GRAD</td>
+      <td>INSTALLER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COMIA, JANETH AVILES</td>
+      <td>Female</td>
+      <td>10-09-80</td>
+      <td>41</td>
+      <td>MARRIED</td>
+      <td>COLLEGE GRAD</td>
+      <td>TEACHER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COMIA, PRINCE JOHNRON</td>
+      <td>Male</td>
+      <td>08-17-2000</td>
+      <td>23</td>
+      <td>SINGLE</td>
+      <td>1ST YEAR</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COMIA, JOHN ASTER V.</td>
+      <td>Male</td>
+      <td>12-25-03</td>
+      <td>18</td>
+      <td>SINGLE</td>
+      <td>GRADE 12</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COMIA, ERICH JEAN V.</td>
+      <td>Female</td>
+      <td>01-10-05</td>
+      <td>17</td>
+      <td>SINGLE</td>
+      <td>GRADE 11</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COMIA, ALESSA V.</td>
+      <td>Female</td>
+      <td>07-27-06</td>
+      <td>16</td>
+      <td>SINGLE</td>
+      <td>GRADE 9</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COMIA, RHEANE ANGELA V.</td>
+      <td>Female</td>
+      <td>12-28-08</td>
+      <td>13</td>
+      <td>SINGLE</td>
+      <td>GARDE 7</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BELTRAN, CHARLIE D.</td>
+      <td>Male</td>
+      <td>08-17-77</td>
+      <td>45</td>
+      <td>MARRIED</td>
+      <td>HSGRAD</td>
+      <td>SARI-SARI OWNER</td>
+      <td></td>
+      <td></td>
+      <td>YES</td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BELTRAN, JOCELYN V.</td>
+      <td>Female</td>
+      <td>12-31-78</td>
+      <td>43</td>
+      <td>MARRIED</td>
+      <td>COLLEGE GRAD</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BELTRAN, CHARLYN V.</td>
+      <td>Female</td>
+      <td>09-23-99</td>
+      <td>22</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BELTRAN, EMMANUEL V.</td>
+      <td>Male</td>
+      <td>10-24-07</td>
+      <td>14</td>
+      <td>SINGLE</td>
+      <td>HSGRAD</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BELTRAN, CELESTINE V.</td>
+      <td>Female</td>
+      <td>06-10-15</td>
+      <td>7</td>
+      <td>SINGLE</td>
+      <td>ELEM</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CATAMEO,JULIANITO Female.</td>
+      <td>Male</td>
+      <td>07-05-55</td>
+      <td>67</td>
+      <td>MARRIED</td>
+      <td>COLLEGE GRAD</td>
+      <td>ENGINEER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CATAMEO,ROSELYN N.</td>
+      <td>Female</td>
+      <td>02-25-63</td>
+      <td>59</td>
+      <td>MARRIED</td>
+      <td>3RD YR COLLEGE</td>
+      <td>HOUSEKEEPER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CATAMEO,JENNY ROSE N.</td>
+      <td>Female</td>
+      <td>11-05-87</td>
+      <td>32</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td>NURSE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CATAMEO, JOWARD N.</td>
+      <td>Male</td>
+      <td>01-02-89</td>
+      <td>33</td>
+      <td>SINGLE</td>
+      <td>COLLEGE GRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CATAMEO, ZAYNE KYRIE N.</td>
+      <td>Male</td>
+      <td>03-07-18</td>
+      <td>4</td>
+      <td>SINGLE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RODELAS, ROBERTO,</td>
+      <td>Male</td>
+      <td>04-09-71</td>
+      <td>51</td>
+      <td>MARRIED</td>
+      <td>HSGRAD</td>
+      <td>OFW</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RODELAS, RAQUEL</td>
+      <td>Female</td>
+      <td>02-28-71</td>
+      <td>51</td>
+      <td>MARRIED</td>
+      <td>HSGRAD</td>
+      <td>HOUSEKEEPER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RODELAS, GWYNETH</td>
+      <td>Female</td>
+      <td>12-20-03</td>
+      <td>18</td>
+      <td>SINGLE</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BANDOJA,GLESSIE</td>
+      <td>Female</td>
+      <td>11-08-95</td>
+      <td>26</td>
+      <td>MARRIED</td>
+      <td>HSGRAD</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BANDOJA, GLEIANN</td>
+      <td>Female</td>
+      <td>07-23-13</td>
+      <td>8</td>
+      <td>SINGLE</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BANDOJA, ARNEL</td>
+      <td>Male</td>
+      <td>08-01-94</td>
+      <td>27</td>
+      <td>MARRIED</td>
+      <td>VOCATIONAL</td>
+      <td>DRIVER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>JASMIN, REY A.</td>
+      <td>Male</td>
+      <td>10-26-77</td>
+      <td>44</td>
+      <td>MARRIED</td>
+      <td>ELEMGRAD</td>
+      <td>TECHNICIAN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>JASMIN, BABYLINDA C.</td>
+      <td>Female</td>
+      <td>04-14-82</td>
+      <td>40</td>
+      <td>MARRIED</td>
+      <td>ELEMGRAD</td>
+      <td>HOUSEWIFE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>JASMIN, JOHN REY C.</td>
+      <td>Male</td>
+      <td>03-16-2005</td>
+      <td>17</td>
+      <td>SINGLE</td>
+      <td>STUDENT</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>JASMIN, GLAIZA MAE C.</td>
+      <td>Female</td>
+      <td>09-30-2008</td>
+      <td>14</td>
+      <td>SINGLE</td>
+      <td>STUDENT</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>JASMIN, REY C.</td>
+      <td>Male</td>
+      <td>06-06-2019</td>
+      <td>2</td>
+      <td>SINGLE</td>
+      <td>STUDENT</td>
+      <td>STUDENT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>JASMIN RAYMON A.</td>
+      <td>Male</td>
+      <td>10-3-1985</td>
+      <td>25</td>
+      <td>SINGLE</td>
+      <td>GRADE 8</td>
+      <td>TECHNICIAN/HELPER</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>CATHOLIC</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<script>
+  function searchTable() {
+      var input, filter, table, tr, td, i, j, txtValue;
+      input = document.getElementById("searchInput");
+      filter = input.value.toLowerCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      
+      for (i = 1; i < tr.length; i++) {
+          tr[i].style.display = "none";
+          td = tr[i].getElementsByTagName("td");
+          for (j = 0; j < td.length; j++) {
+              if (td[j]) {
+                  txtValue = td[j].textContent || td[j].innerText;
+                  if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                      tr[i].style.display = "";
+                      break;
+                  }
+              }
+          }
+      }
+  }
+  </script>
+
+
+</body>
+</html>
